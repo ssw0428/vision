@@ -1,63 +1,39 @@
+$(window).on('load', function(){
+  // tabBox('탭 클릭 버튼',{
+  //   wrap: '버튼과 탭박스를 다같이 포함하고있는 부모',
+  //   tabBox: '탭박스의 클래스명',
+  //   actClass: '커스텀하고 싶은 액티브 클래스명',
+  //   btnAttr: '버튼에 있는 attr'
+  // });
+  tabBox('.btn-tab',{
+    wrap: '.tab-wrap01, .tab-wrap02',
+    tabBox: '.tab-box'
+  });
+})
+
+
+// content 소제목 aos 효과
 window.addEventListener('load', function (event) {
   AOS.init();
 });
 
-// 스크롤 옵셋
-function scrollOffset__init() {
-  $(".btn-scroll-offset").each(function (index, node) {
-    var $node = $(node);
 
-    var offsetTop = $node.offset().top;
-    $node.attr("data-AOV-offsetTop", offsetTop);
-      
-    if (!$node.attr("data-AOV-diff-y")) {
-      $node.attr("data-AOV-diff-y", "0");
-    }
-  });
-}
-
-function btnScroll__init(){
-    $('.main-menu-bar > .inner > .width-size > ul > li > a > span').click(function(){
-        var $this = $(this);
-        var $list = $this.closest('li');
-        var $listHead = parseInt($list.attr('data-list-head'));
-        var $listIndex = parseInt($list.attr('data-list'));
-        
-        var $section = $('.wrap').find('[data-list-body="'+ $listHead +'"][data-list="'+ $listIndex +'"]');
-        var $sectionOffsetTop = parseInt($section.attr('data-AOV-offsetTop'));
-        var $sectionDiff = parseInt($section.attr('data-AOV-diff-y'));
-        var scrollValue = $sectionOffsetTop + $sectionDiff;
-        
-        console.log(scrollValue);
-        
-        $('html,body').stop().animate({
-            scrollTop : scrollValue + 'px'
-        }, 1000);
-    })
-}
-
-function click__init(){
-    $('.btn-box > ul > li:first-child').click(function(){
-        $('.box').css('height', 800 + 'px');
-    })
-    $('.btn-box > ul > li:last-child').click(function(){
-        $('.box').css('height', 300 + 'px');
-    })
-    
-    $('.btn-resize').click(scrollOffset__init);
-}
-
-$(function () {
-  scrollOffset__init();
-  $(window).resize(scrollOffset__init);
-  btnScroll__init();
-  click__init();
+// 메인 슬라이드 및 content-2 사진 슬라이드 묶음
+function swiper__init() {
+// 메인 슬라이드
+var swiper = new Swiper(".mySwiper", {
+  pagination: {
+    el: ".swiper-pagination",
+    dynamicBullets: true,
+    clickable: true,
+  },
 });
 
 
-function swiper__init() {
-  // 메인 슬라이드
-  var swiper1 = new Swiper('.main-slide', {
+  var tab03_swiperSlide = new Swiper('.tab-box .swiper-container', {
+    slidesPerView: 5,
+    spaceBetween: 30,
+    
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
@@ -69,15 +45,12 @@ function swiper__init() {
   });
 
 
-
-
-
   //content-2 사진 슬라이드
-  var swiper2 = new Swiper(".slide2", {
+  var Swiper2 = new Swiper(".slide2, .slide4", {
     slidesPerView: 4,
     spaceBetween: 50,
     autoplay: {
-      delay: 9000,
+      delay: 6000,
       disableOnInteraction: false,
     },
     speed: 2000,
@@ -110,56 +83,12 @@ function swiper__init() {
 }
 
 
-// content-1 탭박스
-function TabBox__init() {
-  $('[data-tab-head-item-name]').click(function () {
-    var $this = $(this);
-    var tabName = $this.attr('data-tab-name');
-    var itemName = $this.attr('data-tab-head-item-name');
-    // [for]
-    // 모든 것을 숨기고
-    $('[data-tab-name="' + tabName + '"]').removeClass('active');
-
-    $('[data-tab-name="' + tabName + '"][data-tab-head-item-name="' + itemName + '"]').addClass('active');
-    $('[data-tab-name="' + tabName + '"][data-tab-body-item-name="' + itemName + '"]').addClass('active');
-
-
-    var tab3 = tabName == 'box-1' && itemName == '3';
-    var tab4 = tabName == 'box-2' && itemName == '2';
-
-    if (tab3) {
-      console.log('i am here');
-      var swiper3 = new Swiper('.slide1', {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-      });
-    }
-
-    if (tab4) {
-      console.log('i am here');
-      var swiper4 = new Swiper('.slide3', {
-        slidesPerView: 5,
-        spaceBetween: 30,
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-      });
-    }
-
-  });
-}
-
-
 $(function () {
   swiper__init();
-  TabBox__init();
 })
 
+
+//팝업 박스 창
 function Pop1__open(client, title, url) {
   $('.pop-1-bg').addClass('active');
   var $pop1 = $('.pop-1');
@@ -200,3 +129,74 @@ function box__init() {
 $(function () {
   box__init();
 })
+
+
+
+/*호연이형 기본 탭박스 */
+function tabBox(button,option){
+  var $tabBtn = null;
+  var $wrap = null;
+
+  //선택한 요소의 탭박스
+  var $btnAttr = null;
+  var $tabId = null;
+  var $nowTabBox = null;
+
+  var $actvdBtn = null;
+  var $actvdBox = null;
+  var $actClass = null;
+
+  function init(){
+      $wrap = $(option.wrap);
+      $tabBtn = $wrap.find(button);
+      
+      option.actClass == undefined ? $actClass = 'on' : $actClass = option.actClass;
+      option.btnAttr == undefined ? $btnAttr = 'data-tab' : $btnAttr = option.btnAttr;
+  }
+
+  function mouEvent(){
+      $tabBtn.on('click', function(e){
+          e.preventDefault();
+          var $this = $(this);
+          
+          //선택한 요소 중복 클릭 방지
+          if(!$this.hasClass($actClass)){
+              action($this);
+          }
+      });
+  }
+
+  function action(elem){
+      // 선택한 요소의 탭 id값 찾기
+      $tabId = elem.attr($btnAttr);
+      $nowTabBox = $('#' + $tabId);
+      // 다른 active 요소 찾기
+      $actvdBtn = $wrap.find(button +'.'+ $actClass);
+      $actvdBox = $wrap.find(option.tabBox +'.'+ $actClass);
+      // 이전 active의 클래스 제거
+      $actvdBtn.removeClass($actClass);
+      $actvdBox.removeClass($actClass);
+      // 선택한 요소 및 탭박스 클래스 추가
+      elem.addClass($actClass);
+      $nowTabBox.addClass($actClass);
+  }
+
+  function start(){
+      init();
+      mouEvent();
+  }
+
+  start();
+}
+
+
+
+
+
+
+
+
+
+
+
+
