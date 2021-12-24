@@ -29,15 +29,16 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
 
-    <script type="text/javascript"
-        src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=71ccd67c35204ca0935a0cc24526a8d4&libraries=services">
-    </script>
-
-    <!-- 구글 지도 api-->
+    <!--네이버 api-->
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=jq4bm0ehm1"></script>
+    
     <script src="/resources/js/index.js"></script>
 </head>
 
 <body>
+<button class="scroll-top" id="js-button">
+    <span class="icon" aria-hidden="true">TOP</span>
+</button>
         <!--메인 메뉴바-->
     <header id="main-menu-box" class="main-menu-bar flex">
         <div class="inner flex flex-1-0-0">
@@ -53,22 +54,22 @@
 
                 <nav class="menu-bar">
                     <ul class="flex height-100p">
-                        <li>
+                        <li id="btn1">
                             <a class="flex flex-ai-c height-100p" href="#">
                                 <span>비쿨 소개</span>
                             </a>
                         </li>
-                        <li>
+                        <li id="btn2">
                             <a class="flex flex-ai-c height-100p" href="#">
                                 <span>비쿨 이야기</span>
                             </a>
                         </li>
-                        <li>
+                        <li id="btn3">
                             <a class="flex flex-ai-c height-100p" href="#">
                                 <span>자랑스러운 비쿨人</span>
                             </a>
                         </li>
-                        <li>
+                        <li id="btn4">
                             <a class="flex flex-ai-c height-100p" href="#">
                                 <span>비쿨 소식</span>
                             </a>

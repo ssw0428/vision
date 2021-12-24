@@ -46,15 +46,15 @@ include "/resources/include/head.php";
         <div class="swiper-pagination"></div>
     </div>
     <!--content-1-->
-    <section class="content-1 con">
-        <div class="title-box flex" data-aos="zoom-in">
+    <section class="content-1">
+        <div id="div1" class="title-box flex con" >
             <div class="bar"></div>
             <div class="title">
                 비전스쿨은<br>하나님과 함께 동행하는 기독교 대안학교 입니다.
             </div>
         </div>
         <div class="tab-wrap01">
-            <ul class="tab-btn-list flex">
+            <ul class="tab-btn-list flex con">
                 <li>
                     <a class="btn-tab on" data-tab="tab-01">
                         비쿨 소개
@@ -77,7 +77,7 @@ include "/resources/include/head.php";
                 </li>
             </ul>
             <div class="tab-box-wrap">
-                <div id="tab-01" class="tab-box on flex">
+                <div id="tab-01" class="tab-box on flex con">
                     <div class="inner flex flex-ai-c">
                         <div class="tab-01-img-box">
                             <img src="/resources/images/img1.jpg" alt="">
@@ -253,10 +253,10 @@ include "/resources/include/head.php";
                         <div class="swiper-pagination"></div>
                     </div>
                 </div>
-                <div id="tab-04" class="tab-box">
+                <div id="tab-04" class="tab-box con">
                     <div class="tab-04-box inner inner-4 flex">
                         <div class="inner-box flex">
-                            <div id="map" style="width:769px;height:433px;"></div>
+                            <div id="map" style="width:770px;height:430px;"></div>
                             <div class="contect-list">
                                 <ul>
                                     <li>
@@ -301,15 +301,15 @@ include "/resources/include/head.php";
         </div>
     </section>
     <!--content-2-->
-    <section class="content-2 con">
-        <div class="title-box flex">
+    <section class="content-2">
+        <div id="div2" class="title-box flex con">
             <div class="bar"></div>
             <div class="title">
                 비전스쿨의<br>또 다른 모습과 매력을 보고 싶다면
             </div>
         </div>
         <div class="tab-wrap02">
-            <ul class="tab-btn-list flex">
+            <ul class="tab-btn-list flex con">
                 <li>
                     <a class="btn-tab on" data-tab="tab-05">
                         비쿨 사진
@@ -324,7 +324,7 @@ include "/resources/include/head.php";
             <div class="tab-box-wrap">
                 <div id="tab-05" class="tab-box on flex">
                     <div class="inner flex flex-ai-c">
-                        <div class="swiper-box con">
+                        <div class="swiper-box swiper-box-js con">
                             <div class="gallery-box">
                                 <div class="box">
                                     <div class="text-box">
@@ -345,46 +345,47 @@ include "/resources/include/head.php";
                                 </div>
                                 <div class="slide2 swiper-container">
                                     <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div
-                                                class="img-box"
-                                                style="background-image:url('https://ssw0428.github.io/img1/pf/happy/ex-8.jpg')"></div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div
-                                                class="img-box"
-                                                style="background-image:url('https://ssw0428.github.io/img1/pf/happy/ex-7.jpg')"></div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div
-                                                class="img-box"
-                                                style="background-image:url('https://ssw0428.github.io/img1/pf/happy/ex-6.jpg')"></div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div
-                                                class="img-box"
-                                                style="background-image:url('https://ssw0428.github.io/img1/pf/happy/ex-5.jpg')"></div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div
-                                                class="img-box"
-                                                style="background-image:url('https://ssw0428.github.io/img1/pf/happy/ex-4.jpg')"></div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div
-                                                class="img-box"
-                                                style="background-image:url('https://ssw0428.github.io/img1/pf/happy/ex-3.jpg')"></div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div
-                                                class="img-box"
-                                                style="background-image:url('https://ssw0428.github.io/img1/pf/happy/ex-2.jpg')"></div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div
-                                                class="img-box"
-                                                style="background-image:url('https://ssw0428.github.io/img1/pf/happy/ex-1.jpg')"></div>
-                                        </div>
+                                        
+                                        <a href="https://www.flickr.com/photos/194160973@N03/albums" class="swiper-slide">
+                                            <div class="img-box">
+                                                <img src="resources/images/picture-1.jpg" alt="">
+                                            </div>
+                                        </a>
+                                        <a href="https://www.flickr.com/photos/194160973@N03/albums" class="swiper-slide">
+                                            <div class="img-box">
+                                                <img src="resources/images/picture-2.jpg" alt="">
+                                            </div>
+                                        </a>
+                                        <a href="https://www.flickr.com/photos/194160973@N03/albums" class="swiper-slide">
+                                            <div class="img-box">
+                                                <img src="resources/images/picture-3.jpg" alt="">
+                                            </div>
+                                        </a>
+                                        <a href="https://www.flickr.com/photos/194160973@N03/albums" class="swiper-slide">
+                                            <div class="img-box">
+                                                <img src="resources/images/picture-4.jpg" alt="">
+                                            </div>
+                                        </a>
+                                        <a href="https://www.flickr.com/photos/194160973@N03/albums" class="swiper-slide">
+                                            <div class="img-box">
+                                                <img src="resources/images/picture-5.jpg" alt="">
+                                            </div>
+                                        </a>
+                                        <a href="https://www.flickr.com/photos/194160973@N03/albums" class="swiper-slide">
+                                            <div class="img-box">
+                                                <img src="resources/images/picture-6.jpg" alt="">
+                                            </div>
+                                        </a>
+                                        <a href="https://www.flickr.com/photos/194160973@N03/albums" class="swiper-slide">
+                                            <div class="img-box">
+                                                <img src="resources/images/picture-7.jpg" alt="">
+                                            </div>
+                                        </a>
+                                        <a href="https://www.flickr.com/photos/194160973@N03/albums" class="swiper-slide">
+                                            <div class="img-box">
+                                                <img src="resources/images/picture-8.jpg" alt="">
+                                            </div>
+                                        </a>
                                     </div>
                                     <div class="swiper-pagination"></div>
                                 </div>
@@ -392,22 +393,22 @@ include "/resources/include/head.php";
                         </div>
                     </div>
                 </div>
-                <div id="tab-06" class="tab-box">
+                <div id="tab-06" class="tab-box flex">
                     <div class="inner flex flex-ai-c">
-                        <div class="swiper-box con">
+                        <div class="swiper-box swiper-box-js con">
                             <div class="gallery-box">
                                 <div class="box">
                                     <div class="text-box">
                                         <p class="text-1">
-                                            <span>PHOTO</span>
+                                            <span>VIDEO</span>
                                             <i class="line1"></i>
                                         </p>
                                         <p class="text-2">
                                             <span>GALLERY</span>
                                         </p>
                                     </div>
-                                    <h3>포토갤러리</h3>
-                                    <p class="text-3">한국공예관의 다양한 모습을 사진을 만나보세요.</p>
+                                    <h3>비디오갤러리</h3>
+                                    <p class="text-3">아이들의 다양한 활동을 영상으로 담았습니다.</p>
                                     <div class="slide-arrows">
                                         <div class="swiper-button swiper-button-prev"></div>
                                         <div class="swiper-button swiper-button-next"></div>
@@ -416,44 +417,100 @@ include "/resources/include/head.php";
                                 <div class="slide4 swiper-container">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
-                                            <div
-                                                class="img-box"
-                                                style="background-image:url('https://ssw0428.github.io/img1/pf/happy/ex-8.jpg')"></div>
+                                            <div class="img-box">
+                                                <iframe
+                                                    width="360"
+                                                    height="360"
+                                                    src="https://www.youtube.com/embed/AYzFRbv0az0"
+                                                    title="YouTube video player"
+                                                    frameborder="0"
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                    allowfullscreen="allowfullscreen"></iframe>
+                                            </div>
                                         </div>
                                         <div class="swiper-slide">
-                                            <div
-                                                class="img-box"
-                                                style="background-image:url('https://ssw0428.github.io/img1/pf/happy/ex-7.jpg')"></div>
+                                            <div class="img-box">
+                                                <iframe
+                                                    width="360"
+                                                    height="360"
+                                                    src="https://www.youtube.com/embed/AYzFRbv0az0"
+                                                    title="YouTube video player"
+                                                    frameborder="0"
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                    allowfullscreen="allowfullscreen"></iframe>
+                                            </div>
                                         </div>
                                         <div class="swiper-slide">
-                                            <div
-                                                class="img-box"
-                                                style="background-image:url('https://ssw0428.github.io/img1/pf/happy/ex-6.jpg')"></div>
+                                            <div class="img-box">
+                                                <iframe
+                                                    width="360"
+                                                    height="360"
+                                                    src="https://www.youtube.com/embed/AYzFRbv0az0"
+                                                    title="YouTube video player"
+                                                    frameborder="0"
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                    allowfullscreen="allowfullscreen"></iframe>
+                                            </div>
                                         </div>
                                         <div class="swiper-slide">
-                                            <div
-                                                class="img-box"
-                                                style="background-image:url('https://ssw0428.github.io/img1/pf/happy/ex-5.jpg')"></div>
+                                            <div class="img-box">
+                                                <iframe
+                                                    width="360"
+                                                    height="360"
+                                                    src="https://www.youtube.com/embed/AYzFRbv0az0"
+                                                    title="YouTube video player"
+                                                    frameborder="0"
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                    allowfullscreen="allowfullscreen"></iframe>
+                                            </div>
                                         </div>
                                         <div class="swiper-slide">
-                                            <div
-                                                class="img-box"
-                                                style="background-image:url('https://ssw0428.github.io/img1/pf/happy/ex-4.jpg')"></div>
+                                            <div class="img-box">
+                                                <iframe
+                                                    width="360"
+                                                    height="360"
+                                                    src="https://www.youtube.com/embed/AYzFRbv0az0"
+                                                    title="YouTube video player"
+                                                    frameborder="0"
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                    allowfullscreen="allowfullscreen"></iframe>
+                                            </div>
                                         </div>
                                         <div class="swiper-slide">
-                                            <div
-                                                class="img-box"
-                                                style="background-image:url('https://ssw0428.github.io/img1/pf/happy/ex-3.jpg')"></div>
+                                            <div class="img-box">
+                                                <iframe
+                                                    width="360"
+                                                    height="360"
+                                                    src="https://www.youtube.com/embed/AYzFRbv0az0"
+                                                    title="YouTube video player"
+                                                    frameborder="0"
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                    allowfullscreen="allowfullscreen"></iframe>
+                                            </div>
                                         </div>
                                         <div class="swiper-slide">
-                                            <div
-                                                class="img-box"
-                                                style="background-image:url('https://ssw0428.github.io/img1/pf/happy/ex-2.jpg')"></div>
+                                            <div class="img-box">
+                                                <iframe
+                                                    width="360"
+                                                    height="360"
+                                                    src="https://www.youtube.com/embed/AYzFRbv0az0"
+                                                    title="YouTube video player"
+                                                    frameborder="0"
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                    allowfullscreen="allowfullscreen"></iframe>
+                                            </div>
                                         </div>
                                         <div class="swiper-slide">
-                                            <div
-                                                class="img-box"
-                                                style="background-image:url('https://ssw0428.github.io/img1/pf/happy/ex-1.jpg')"></div>
+                                            <div class="img-box">
+                                                <iframe
+                                                    width="360"
+                                                    height="360"
+                                                    src="https://www.youtube.com/embed/AYzFRbv0az0"
+                                                    title="YouTube video player"
+                                                    frameborder="0"
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                    allowfullscreen="allowfullscreen"></iframe>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="swiper-pagination"></div>
@@ -467,7 +524,7 @@ include "/resources/include/head.php";
     </section>
     <!--content-3-->
     <section class="content-3">
-        <div class="title-box flex con">
+        <div id="div3" class="title-box flex con">
             <div class="bar"></div>
             <div class="title">
                 졸업생 이야기
@@ -610,97 +667,204 @@ include "/resources/include/head.php";
             </div>
         </div>
     </section>
-    <!--content-4-->
+    <!--
     <section class="content-4 con">
-        <div class="title-box flex con">
+        <div id="div4" class="title-box flex con">
             <div class="bar"></div>
             <div class="title">
                 비전스쿨의<br>새로운 소식에 대해서 알아보세요
             </div>
         </div>
-
         <section class="notice">
-            <div class="page-title">
-                <div class="container">
-                    <h3>공지사항</h3>
-                </div>
+            <div class="notice-boxs box con">
+                <ul>
+                    <li>
+                        <div id="notice-box" class="header">
+                            <div class="td num">번호</div>
+                            <div class="title">제목</div>
+                            <div class="td date">등록일</div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="notice-box-list on">
+                    <li>
+                        <div id="notice-box" class="head">
+                            <div class="td num">2321</div>
+                            <div class="td title">hi</div>
+                            <div class="td date">2.5</div>
+                        </div>
+                        <div class="body">
+                            <div class="text">hello</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="notice-box" class="head">
+                            <div class="td num">2</div>
+                            <div class="td title">hi</div>
+                            <div class="td date">2.5</div>
+                        </div>
+                        <div class="body">
+                            <div class="text">hello</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="notice-box" class="head">
+                            <div class="td num">2</div>
+                            <div class="td title">hi</div>
+                            <div class="td date">2.5</div>
+                        </div>
+                        <div class="body">
+                            <div class="text">hello</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="notice-box" class="head">
+                            <div class="td num">2</div>
+                            <div class="td title">hi</div>
+                            <div class="td date">2.5</div>
+                        </div>
+                        <div class="body">
+                            <div class="text">hello</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="notice-box" class="head">
+                            <div class="td num">2</div>
+                            <div class="td title">hi</div>
+                            <div class="td date">2.5</div>
+                        </div>
+                        <div class="body">
+                            <div class="text">hello</div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="notice-box-list">
+                    <li>
+                        <div id="notice-box" class="head">
+                            <div class="td num">2</div>
+                            <div class="td title">hi</div>
+                            <div class="td date">2.5</div>
+                        </div>
+                        <div class="body">
+                            <div class="text">hello</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="notice-box" class="head">
+                            <div class="td num">2</div>
+                            <div class="td title">hi</div>
+                            <div class="td date">2.5</div>
+                        </div>
+                        <div class="body">
+                            <div class="text">hello</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="notice-box" class="head">
+                            <div class="td num">2</div>
+                            <div class="td title">hi</div>
+                            <div class="td date">2.5</div>
+                        </div>
+                        <div class="body">
+                            <div class="text">hello</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="notice-box" class="head">
+                            <div class="td num">2</div>
+                            <div class="td title">hi</div>
+                            <div class="td date">2.5</div>
+                        </div>
+                        <div class="body">
+                            <div class="text">hello</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="notice-box" class="head">
+                            <div class="td num">2</div>
+                            <div class="td title">hi</div>
+                            <div class="td date">2.5</div>
+                        </div>
+                        <div class="body">
+                            <div class="text">hello</div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="notice-box-list">
+                    <li>
+                        <div id="notice-box" class="head">
+                            <div class="td num">2</div>
+                            <div class="td title">hi</div>
+                            <div class="td date">2.5</div>
+                        </div>
+                        <div class="body">
+                            <div class="text">hello</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="notice-box" class="head">
+                            <div class="td num">2</div>
+                            <div class="td title">hi</div>
+                            <div class="td date">2.5</div>
+                        </div>
+                        <div class="body">
+                            <div class="text">hello</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="notice-box" class="head">
+                            <div class="td num">2</div>
+                            <div class="td title">hi</div>
+                            <div class="td date">2.5</div>
+                        </div>
+                        <div class="body">
+                            <div class="text">hello</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="notice-box" class="head">
+                            <div class="td num">2</div>
+                            <div class="td title">hi</div>
+                            <div class="td date">2.5</div>
+                        </div>
+                        <div class="body">
+                            <div class="text">hello</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="notice-box" class="head">
+                            <div class="td num">2</div>
+                            <div class="td title">hi</div>
+                            <div class="td date">2.5</div>
+                        </div>
+                        <div class="body">
+                            <div class="text">hello</div>
+                        </div>
+                    </li>
+                </ul>
             </div>
 
-            <!-- board seach area -->
-            <div id="board-search">
-                <div class="container">
-                    <div class="search-window">
-                        <form action="">
-                            <div class="search-wrap">
-                                <label for="search" class="blind">공지사항 내용 검색</label>
-                                <input id="search" type="search" name="" placeholder="검색어를 입력해주세요." value="">
-                                <button type="submit" class="btn btn-dark">검색</button>
-                            </div>
-                        </form>
-                    </div>
+            <br><br>
+
+            <div class="wrap_paging flex flex-jc-c">
+                <a href="#none" class="first">맨처음</a><br>
+                <a href="#none" class="prev">이전</a>
+                <div class="paging flex">
+                    <a href="#none" class="on view">1</a>
+                    <a href="#none" class="view">2</a>
+                    <a href="#none" class="view">3</a>
+                    <a href="#none">4</a>
+                    <a href="#none">5</a>
+                    <a href="#none">6</a>
+                    <a href="#none">7</a>
+                    <a href="#none">8</a>
                 </div>
+                <a href="#none" class="next">다음</a><br>
+                <a href="#none" class="last">마지막</a>
             </div>
-
-            <!-- board list area -->
-            <div id="board-list">
-                <div class="container">
-                    <table class="board-table">
-                        <thead>
-                            <tr>
-                                <th scope="col" class="th-num">번호</th>
-                                <th scope="col" class="th-title">제목</th>
-                                <th scope="col" class="th-date">등록일</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>4</td>
-                                <th>
-                                    <a href="#!">[공지사항] 개인정보 처리방침 변경안내처리방침</a>
-                                    <p>테스트 dsadasds</p>
-                                </th>
-                                <td>2017.07.13</td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <th>
-                                    <a href="#!">[공지사항] 개인정보 처리방침 변경안내처리방침</a>
-                                    <p>테스트 dsadasds</p>
-                                </th>
-                                <td>2017.07.13</td>
-                            </tr>
-
-                            <tr>
-                                <td>3</td>
-                                <th>
-                                    <a href="#!">[공지사항] 개인정보 처리방침 변경안내처리방침</a>
-                                    <p>테스트</p>
-                                </th>
-                                <td>2017.07.13</td>
-                            </tr>
-
-                            <tr>
-                                <td>2</td>
-                                <th>
-                                    <a href="#!">공지사항 안내입니다. 이용해주셔서 감사합니다</a>
-                                </th>
-                                <td>2017.06.15</td>
-                            </tr>
-
-                            <tr>
-                                <td>1</td>
-                                <th>
-                                    <a href="#!">공지사항 안내입니다. 이용해주셔서 감사합니다</a>
-                                </th>
-                                <td>2017.06.15</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
         </section>
     </section>
+    content-4-->
 </div>
 
 <!-- 팝업-->

@@ -388,3 +388,20 @@ screen and (max-height: 1000px) {
 .con-2 {
     max-width: 1620px;
 }
+
+.scroll-top {
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+	z-index: 1000;
+	background-color: #999;
+	opacity: .8;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	border: none;
+	color: #fff;
+}
+.scroll-top:hover {
+	cursor: pointer;
+}
