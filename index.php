@@ -25,7 +25,7 @@ include "/resources/include/head.php";
                 </div>
             </div>
             <div class="swiper-box swiper-slide">
-                <img src="resources/images/main-slide-1.jpg" alt="">
+                <img src="resources/images/main-slide-3.jpg" alt="">
                 <div class="txt-box">
                     <p>하나님과 동행하는 비전스쿨</p>
                     <p>하나님과 동행하는 아이들</p>
@@ -34,7 +34,7 @@ include "/resources/include/head.php";
                 </div>
             </div>
             <div class="swiper-box swiper-slide">
-                <img src="resources/images/main-slide-2.jpg" alt="">
+                <img src="resources/images/main-slide-4.jpg" alt="">
                 <div class="txt-box">
                     <p>하나님과 동행하는 비전스쿨</p>
                     <p>하나님과 동행하는 아이들</p>
