@@ -27,7 +27,7 @@ include "/resources/include/head.php";
             <div class="swiper-box swiper-slide">
                 <img src="resources/images/main-slide-3.jpg" alt="">
                 <div class="txt-box">
-                    <p>하나님과 동행하는 비전스쿨</p>
+                    <p>하나님과 함께하는 비전스쿨</p>
                     <p>하나님과 동행하는 아이들</p>
                     <p>하나님과 동행하는 아이들</p>
                     <p>하나님과 동행하는 아이들</p>
