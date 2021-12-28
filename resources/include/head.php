@@ -75,7 +75,7 @@
                             </a>
                         </li>
                         <li>
-                            <a class="flex flex-ai-c height-100p" href="#">
+                            <a href="http://vision.com:3301/pages/sub01.php#" class="flex flex-ai-c height-100p" href="#">
                                 <span>입학 안내</span>
                             </a>
                         </li>
