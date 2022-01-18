@@ -46,8 +46,8 @@
             <div class="width-size con flex flex-1-0-0">
 
                 <div class="logo flex height-100p">
-                    <a href="" class="flex flex-ai-c height-100p">
-                        <img src="resources/images/main_logo.png" alt="">
+                    <a href="http://vision.com:3301/#" class="flex flex-ai-c height-100p">
+                        <img src="/resources/images/main_logo.png" alt="">
                     </a>
                 </div>
 
@@ -56,25 +56,27 @@
                 <nav class="menu-bar">
                     <ul class="flex height-100p">
                         <li id="btn1">
-                            <a class="flex flex-ai-c height-100p" href="#">
+                            <a class="flex flex-ai-c height-100p" href="http://vision.com:3301/#">
                                 <span>비쿨 소개</span>
                             </a>
                         </li>
                         <li id="btn2">
-                            <a class="flex flex-ai-c height-100p" href="#">
+                            <a class="flex flex-ai-c height-100p" href="http://vision.com:3301/#">
                                 <span>비쿨 이야기</span>
                             </a>
                         </li>
                         <li id="btn3">
-                            <a class="flex flex-ai-c height-100p" href="#">
+                            <a class="flex flex-ai-c height-100p" href="http://vision.com:3301/#">
                                 <span>자랑스러운 비쿨人</span>
                             </a>
                         </li>
+                        <!--
                         <li id="btn4">
-                            <a class="flex flex-ai-c height-100p" href="#">
+                            <a class="flex flex-ai-c height-100p" href="http://vision.com:3301/#">
                                 <span>비쿨 소식</span>
                             </a>
                         </li>
+                        -->
                         <li>
                             <a href="http://vision.com:3301/pages/sub01.php#" class="flex flex-ai-c height-100p" href="#">
                                 <span>입학 안내</span>

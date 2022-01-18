@@ -6,7 +6,7 @@ include "/resources/include/head.php";
     <!--메인 슬라이드-->
     <div class="swiper mySwiper main-slide swiper-container con">
         <div class="swiper-wrapper">
-            <div class="swiper-box swiper-slide">
+            <div style="background-image:url('https://ssw0428.github.io/vision/resources/images/sub-page-img.jpg')" class="swiper-box swiper-slide">
                 <img src="resources/images/main-slide-1.jpg" alt="">
                 <div class="txt-box">
                     <p>하나님과 동행하는 비전스쿨</p>

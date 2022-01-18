@@ -5,7 +5,7 @@
 #main-menu-box .inner .width-size .menu-bar {}
 #main-menu-box .inner .width-size .menu-bar > ul {}
 #main-menu-box .inner .width-size .menu-bar > ul > li {}
-#main-menu-box .inner .width-size .menu-bar > ul > li:not(:nth-child(5)) {margin-right: 48px;}
+#main-menu-box .inner .width-size .menu-bar > ul > li:not(:nth-child(4)) {margin-right: 48px;}
 #main-menu-box .inner .width-size .menu-bar > ul > li > a {font-size: 20px; font-weight: 500;}
 #main-menu-box .inner .width-size .menu-bar > ul > li:hover > a {font-weight: 700;}
 
